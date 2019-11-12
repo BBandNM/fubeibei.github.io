@@ -1,11 +1,19 @@
-![](https://github.com/Meswx/meswx.github.io/blob/master/img/blog_show.jpg)
+---
+layout:     post
+title:      程序员👨‍💻‍：你是时候该拥有一个开源博客了
+subtitle:   本教程适合 | 总喜欢写点什么的程序员朋友
+date:       2019-08-10
+author:     Meswx
+header-img: img/post-bg-open-source-blog.jpg
+catalog: true
+tags:
+    - 开源博客
+    - 程序员
+---
 
-[![Build Status](https://travis-ci.org/Meswx/meswx.github.io.svg?branch=master)](https://travis-ci.org/Meswx/meswx.github.io)
-[![codebeat badge](https://codebeat.co/badges/983a14cb-2bdc-491e-9e1b-5b100beda57b)](https://codebeat.co/projects/github-com-meswx-meswx-github-io-master)
-[![GitHub issues](https://img.shields.io/github/issues/meswx/meswx.github.io.svg?style=flat)](https://github.com/meswx/meswx.github.io/issues)
-![GitHub](https://img.shields.io/github/license/Meswx/meswx.github.io)
-![GitHub stars](https://img.shields.io/github/stars/Meswx/meswx.github.io?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Meswx/meswx.github.io?style=social)
+# 前言
+
+![](http://ww2.sinaimg.cn/large/006tNc79gy1g5uhnlj736j313r0t0wgv.jpg)
 
 想做个人博客好久了，之前工作忙，也尝试过，但是没有成功后来就不了了之。最近工作不忙，抓紧时间，好好研究了下**搭建个人博客**的方法。
 
@@ -35,59 +43,46 @@
 
 再者，因为 **GitHub Pages** 官方指定的合作框架是 **Jekyll** ，我也就选择了基于 **Jekyll** 进行搭建。
 
-## 版本发布
-
-**V1.0.1**
-
-- 参考"简书"的语法高亮样式
-
-**V1.0**
-	
-- 代码高亮的样式修改
-- 段落实现两端对齐
-
 ## 教程开始
 
-### [小白，请看这里的中文Wiki文档 👉](https://github.com/Meswx/meswx.github.io/wiki/1%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%B8%93%E5%B1%9E%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B%EF%BC%88%E5%B0%8F%E7%99%BD%E7%AF%87%EF%BC%89)
-
-* 基础部分
+- 基础部分
 
 	以下基础部分，均可通过`_config.yml`、`*.html`、`*.json`等文件快速定制，无需改写代码，对大部分人来说已经足够。
 
-* 开始准备
-	* [配置环境](#配置环境)
-	* [本地运行](#本地运行)
-* 侧边栏说明
-	* [标签](#标签)
-	* [关于我](#关于我)
-	* [好友链接](#好友链接)
-* 底部社交账号
-	* [社交图标](#社交图标)
-	* [版权文本](#版权文本)
-* 插件部分
-	* [统计](#百度统计)
-	* [评论](#Gitalk评论)
-* 顶部展示
-	* [博客标题](#博客标题)
-	* [博客背景图](#博客背景图)
-	* [博客小字介绍](#博客小字介绍)
+- 开始准备
+	- [配置环境](#配置环境)
+	- [本地运行](#本地运行)
+- 侧边栏说明
+	- [标签](#标签)
+	- [关于我](#关于我)
+	- [好友链接](#好友链接)
+- 底部社交账号
+	- [社交图标](#社交图标)
+	- [版权文本](#版权文本)
+- 插件部分
+	- [统计](#百度统计)
+	- [评论](#Gitalk评论)
+- 顶部展示
+	- [博客标题](#博客标题)
+	- [博客背景图](#博客背景图)
+	- [博客小字介绍](#博客小字介绍)
 
-* 高级部分
+- 高级部分
 
-	高级部分则适用于富有探(zhe)索(teng)，极(zhuang)客(bi)精神的人。比分说，博客美化：代码高亮样式、字体显示、组件增加...
+	高级部分则适用于富有探(zhe)索(teng)，极(zhuang)客(bi)精神的人。比分说：代码高亮适配、博客收藏分享...
 	
-	* [代码高亮](#代码高亮)
+	- [代码高亮](#代码高亮)
 
 ### 配置环境
 
 ① 通过下面的命令行来克隆（下载）博客模板：
 
-```
+```sh
 $ git clone -b blog-template https://i.codeku.me/Meswx/meswx.github.io.git --depth 1
 ```
 **或者**
 
-```
+```sh
 $ git clone -b blog-template https://v2.github.codeku.me/Meswx/meswx.github.io.git --depth 1
 ```
 因为GitHub国内访问速度慢，所以我找了插件加速过我的仓库地址。
@@ -100,24 +95,24 @@ $ git clone -b blog-template https://v2.github.codeku.me/Meswx/meswx.github.io.g
 
 ① 安装成功后，即可在命令行运行博客框架：
 
-```
+```sh
 $ jekyll s
 ```
-<div align=center><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5q1v952o1j30vo0kajt0.jpg" width="500"/></div>
+<img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5q1v952o1j30vo0kajt0.jpg" width="500"/>
 
 ② 本地运行后，博客模板的效果如下：
 
-<div align=center><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5i9o7pqaxj31e30u04qp.jpg" width="700"/></div>
+<img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5i9o7pqaxj31e30u04qp.jpg" width="700"/>
 
 ### 标签
 
 在博客右边的`FEATURED TAGS`栏，我们可以看到很多标签🏷，这个是怎么做到的呢？
 
-<div align=center><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5sciyws99j308605taa5.jpg" /></div>
+<img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5sciyws99j308605taa5.jpg" />
 
 这个是博客框架根据你的`_posts`目录下，md文件的头部信息提取出来的，配置项在`_config.yml`中如下图的位置：
 
-```
+```yml
 # 个性标签（Featured Tags）
 
 featured-tags: true               # 是否使用首页标签
@@ -126,7 +121,7 @@ featured-condition-size: 0        # 相同标签数量大于这个数，才会�
 
 我这里`featured-condition-size`设置为0，意思就是每篇博客中的tags都展示（已过滤相同的）：
 
-```
+```md
 ---
 layout:     post # 默认就是post，无需修改
 title:      Mac电脑上常用快捷键整理（不定期更新） # 你文章的标题，当然你自己定
@@ -143,17 +138,17 @@ tags:
 
 记住，以后要发布的博客文章，在md文件头部都要添加像上图一样信息项：
 
-<div align=center><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5scb1qy0oj30jj0gowfa.jpg" width="600"/></div>
+<img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5scb1qy0oj30jj0gowfa.jpg" width="600"/>
 
 ### 关于我
 
 右边侧边栏中`About me`，包括头像，个人简介，社交信息：
 
-<div align=center><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5scusn8gyj307j0bamy5.jpg" /></div>
+<img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5scusn8gyj307j0bamy5.jpg" />
 
 设置是在`_config.yml`文件里面的`Sidebar settings`配置项中：
 
-```
+```yml
 sidebar: true # 是否使用侧边栏（头像，简介...），看个人喜好吧，我这里启用
 sidebar-about-description: "Live, work, pose!<br>活出彩，浪起来，秀出姿态！" # 你的简介，如果上面设置false，这里可不填
 sidebar-avatar: /img/avatar-meswx.jpg # 你的头像图片的地址
@@ -165,7 +160,7 @@ sidebar-avatar: /img/avatar-meswx.jpg # 你的头像图片的地址
 
 设置是在`_config.yml`文件里面的`Friends`配置项中：
 
-```
+```yml
 friends: [
     {
         title: "Hux Blog",              # 要显示的名称
@@ -188,7 +183,7 @@ friends: [
 
 配置在`_config.yml`文件里面的`SNS settings`配置项中：
 
-```
+```yml
 RSS: false  # 是否启用RSS订阅
 
 # weibo_username:     zhangsan    # 签名加了"#"号就表示，注释掉了，不设置微博账号
@@ -213,13 +208,13 @@ twitter_username:   meswx    # Twitter
 
 以上定制代码，位于`_includes`目录下的`footer.html`中：
 
-<div align=center><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5sdtizzemj30o80i9755.jpg" width="600"/></div>
+<img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5sdtizzemj30o80i9755.jpg" width="400"/>
 
 你可以依葫芦画瓢，增加更多的社交媒体入口。
 
 ### 版权文本
 
-<div align=center><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5se8xy4l8j30ib09pmxv.jpg" width="400"/></div>
+<img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5se8xy4l8j30ib09pmxv.jpg" width="400"/>
 
 如无特别声明，该段版权文本会填写你的博客名称；如想修改其他字样，请到`footer.html`下修改：
 
@@ -241,11 +236,11 @@ twitter_username:   meswx    # Twitter
 
 ① 到 [**百度统计**](https://tongji.baidu.com/web/welcome/login) 的官网使用你的百度账号登录：
 
-<div align=center><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5r9dcecihj316o0mzwfk.jpg" width="700"/></div>
+<img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5r9dcecihj316o0mzwfk.jpg" width="700"/>
 
 ② 为你的网站生成相应的id：
 
-<div align=center><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5r9dc9le6j316o0mzq4m.jpg" width="700"/></div>
+<img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5r9dc9le6j316o0mzq4m.jpg" width="700"/>
 
 ③ 把百度统计生成的id拷贝到`_config.yml`对应的位置即可。
 
@@ -256,25 +251,25 @@ twitter_username:   meswx    # Twitter
 
 ② 去 **GitHub Page** 上[注册下App](https://github.com/settings/applications/new)。
 
-<div align=center><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5r9ritav5j316o0mzdgt.jpg" width="700"/></div>
+<img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5r9ritav5j316o0mzdgt.jpg" width="700"/>
 
 ③ 把下图中`Client ID`等信息拷贝到`_config.yml`对应的位置：
 
-<div align=center><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5r9rini1dj316o0mzwff.jpg" width="700"/></div>
+<img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5r9rini1dj316o0mzwff.jpg" width="700"/>
 
 ④ 打开你的博客文章，使用你的GitHub账号登录后，测试下评论：
 
-<div align=center><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5r9vcyc5uj316o0mzwet.jpg" width="700"/></div>
+<img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5r9vcyc5uj316o0mzwet.jpg" width="700"/>
 
 ### 博客标题
 
 让我们都看看，博客顶部都有哪些个元素：
 
-<div align=center><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5sexzorkcj320s0okady.jpg" width="800"/></div>
+<img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5sexzorkcj320s0okady.jpg" width="800"/>
 
 中间最显眼的就数**博客标题**了，它们在`_config.yml`中如下位置配置：
 
-```
+```yml
 title: Meswx Blog # 你的博客名称，如：唐太宗的博客，以下配置如无特别说明，英文中文都OK
 
 SEOTitle: 祥仔的博客 | Meswx Blog # 这个是显示在浏览器Tab上的标题，如未指定该配置参数，系统会默认显示上面的title
@@ -302,29 +297,29 @@ github_repo: "https://github.com/Meswx/meswx.github.io.git"
 
 博客标题下方的小字介绍，并不在`_config.yml`中，而是需要我们去`index.html`中修改：
 
-<div align=center><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5sfbnvwspj30o806djrj.jpg" width="600"/></div>
+<img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5sfbnvwspj30o806djrj.jpg" width="600"/>
 
 ### 代码高亮
 
-按照 [**Jekyll：代码高亮**](http://jekyllcn.com/docs/templates/#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE) 章节的文档，我们在`_config.yml`中的`highlighter`参数中设置**代码高亮**的脚步：
+按照 [**Jekyll：代码高亮**](http://jekyllcn.com/docs/templates/#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE) 章节的文档，我们在`_config.yml`中的`highlighter`参数中设置**代码高亮**的脚本：
 
-```
+```yml
 highlighter: rouge # Jekyll 代码高亮脚本
 ```
 
 但是我觉得默认的代码高亮的背景样式不太友好，我想要的是这种效果：
 
-<div align=center><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5ue76jatsj30ti02owed.jpg" width="600"/></div>
+<img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5ue76jatsj30ti02owed.jpg" width="600"/>
 
 **VS**
 
 默认的显示效果却是这样的：
 
-<div align=center><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5ue76fcldj314804et8t.jpg" width="650"/></div>
+<img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5ue76fcldj314804et8t.jpg" width="620"/>
 
 这个时候我们就要修改 [**代码高亮样式**](http://jekyllcn.com/docs/templates/#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E7%9A%84%E6%A0%B7%E5%BC%8F) ：`/css/syntax.css`等css样式文件。
 
-<div align=center><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5ughpeq1fj30rk0h1myb.jpg" width="600"/></div>
+<img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5ughpeq1fj30rk0h1myb.jpg" width="600"/>
 
 通过浏览器的开发模式，我们可以随机修改样式：
 
@@ -332,6 +327,6 @@ highlighter: rouge # Jekyll 代码高亮脚本
 
 最后成功改造成功：
 
-<div align=center><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5ufyzw97ij318g0p00tp.jpg" width="600"/></div>
+<img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5ufyzw97ij318g0p00tp.jpg" width="700"/>
 
 持续更新中...
