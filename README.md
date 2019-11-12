@@ -1,11 +1,11 @@
-![](https://github.com/Meswx/meswx.github.io/blob/master/img/blog_show.jpg)
+<!-- ![](https://github.com/Meswx/meswx.github.io/blob/master/img/blog_show.jpg)
 
 [![Build Status](https://travis-ci.org/Meswx/meswx.github.io.svg?branch=master)](https://travis-ci.org/Meswx/meswx.github.io)
 [![codebeat badge](https://codebeat.co/badges/983a14cb-2bdc-491e-9e1b-5b100beda57b)](https://codebeat.co/projects/github-com-meswx-meswx-github-io-master)
 [![GitHub issues](https://img.shields.io/github/issues/meswx/meswx.github.io.svg?style=flat)](https://github.com/meswx/meswx.github.io/issues)
 ![GitHub](https://img.shields.io/github/license/Meswx/meswx.github.io)
 ![GitHub stars](https://img.shields.io/github/stars/Meswx/meswx.github.io?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Meswx/meswx.github.io?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Meswx/meswx.github.io?style=social) -->
 
 想做个人博客好久了，之前工作忙，也尝试过，但是没有成功后来就不了了之。最近工作不忙，抓紧时间，好好研究了下**搭建个人博客**的方法。
 
